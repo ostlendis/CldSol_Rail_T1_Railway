@@ -14,15 +14,14 @@ TODO
 ### Fragen
 
 Frage: Können alle Teammitglieder die Applikation deployen?  
-Antwort: todo
+Antwort: Ja, alle Teammitglieder können die Applikation starten, entfernen und auch bearbeiten.
 
 Frage: Können Sie Benutzer und Zugriffsrechte fürs Deployment verwalten?  
-Antwort: todo
+Antwort: Nein. Man kann User zum Projekt einladen welche entweder read-only oder read-write access haben.
+Eine granulare einstellung ist nicht möglich
 
-
-Frage: Bietet der Provider die
-Möglichkeit z.B. ein GitHub-/GitLab-Repository zu verbinden und dieses automatisch zu deployen?  
-Antwort: todo
+Frage: Bietet der Provider die Möglichkeit z.B. ein GitHub-/GitLab-Repository zu verbinden und dieses automatisch zu deployen?  
+Antwort: Ja, das ist mehr oder weniger der hauptaspekt von Railway
 
 Frage: Weshalb haben Sie diesen Provider für die Evaluation ausgewählt?  
 Antwort: todo
