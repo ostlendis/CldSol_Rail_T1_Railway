@@ -24,24 +24,30 @@ Frage: Bietet der Provider die Möglichkeit z.B. ein GitHub-/GitLab-Repository z
 Antwort: Ja, das ist mehr oder weniger der hauptaspekt von Railway
 
 Frage: Weshalb haben Sie diesen Provider für die Evaluation ausgewählt?  
-Antwort: todo
-
+Antwort: Railway ist sehr einfach zu bedienen und schnell auf zu setzen, zumindest beim Deployment eines Github Projektes. Weiter gibt es eine relativ grosszügige "Free Trial" bei der man 500MB RAM und geteilte VCPUs benutzen kann. Zuletzt war uns beiden dieser Cloud-Provider unbekannt welches die Arbeit spannender gestaltete. 
 
 Frage: Welche Möglichkeiten haben Sie, die Applikation zu starten und zu stoppen?  
-Antwort: todo
+Antwort: Auf der Website railway.com hat man die Möglichkeit das Deployment einer Applikation zu entfernen und wieder zurück zu laden. Dies ist sehr unschön und die Webseite bietet ansonsten keine weiteren Möglichkeiten in der Trial-Version. Wenn man allerdings das CLI für eine lokale Instanz verwendet kann man mit "railway up" für Start und "railway down" für Stop die Kontrolle etwas besser übernehmen.
 
 
 Frage: Gibt es die Möglichkeit, das Deployment zu automatisieren? Welche Schritte wären dazu
 nötig?  
-Antwort: todo
+Antwort: Ja, out of the box wird Railway ein GitHub-Projekt sofort deployen und mit automatisierte Deployments konfigurieren. Railway kann automatisch Änderungen im Repository erkennen (z.B. bei einem neuen commit) und die Applikation neu deployen.
 
 
 Frage: Wo können Sie das Log der Applikation betrachten? Sehen Sie auch die einzelnen HTTP
 Requests und Responses?  
-Antwort: todo
+Antwort: Wenn man auf dem Dashboard auf der Railway Webseite das deployte Projekt anklickt, kann man die laufende Instanz anklicken und sieht da nebst weiteren Details einen Tab für je Build-, Deploy- und HTTP-Logs.
 
 Frage: Worin sehen Sie die Vor- und Nachteile Ihres Providers verglichen mit a9s?  
-Antwort: todo
+Antwort: Die Vorteile sind: 
+Benutzerfreundlichkeit - Applikation lässt sich einfach und schnell aufsetzen und überwachen.
+Automatisierung - Projekte sind von Anfang an automatisiert.
+Logs - Die Logdateien sind übersichtlich und einfach einsehbar im Web-Portal.
+Kosten - Für kleine Projekte ist die Verwendung absolut kostenlos.
+
+Die Nachteile sind:
+Einstellungsmöglichkeiten im "Backend" - Railway ist eine Managed Platform, die die Infrastruktur komplett abstrahiert und bietet keine Möglichkeit, unterliegende Instanzen oder Netzwerkeinstellungen direkt zu konfigurieren.
 
 ## tmpdoc
 
