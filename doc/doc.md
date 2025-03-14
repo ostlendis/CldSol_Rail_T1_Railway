@@ -43,6 +43,17 @@ Antwort: todo
 Frage: Worin sehen Sie die Vor- und Nachteile Ihres Providers verglichen mit a9s?  
 Antwort: todo
 
+
+## Arbeitsauftrag 2
+### OSSM-Analyse
+#### On-Demand
+Der On-Demand Aspekt ist auf Railway klar gewährleistet. Nach dem Anmelden oder registrieren kann man direkt loslegen indem ein Template gestartet wird oder ein Github-Repo verknüpft. Kurze Zeit später (bis zu 2 Minuten) ist die Applikation funktionsfähig.  
+Zum Beispiel lässt sich jederzeit das Wordpress Template starten:  
+![image](/doc/images/wordpress-lauch-activity.png)  
+Innerhalb Sekunden und ohne warten lässt sich ein Service starten. Es wurde zuerst von einem leeren Projekt gestartet und schliesslich   
+![image](/doc/images/wordpress-instances-launched.png)  
+
+
 ## tmpdoc
 
 - Logged into railway with github account
