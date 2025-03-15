@@ -72,7 +72,8 @@ TODO
 
 
 ## Auftrag 4 - Analyse Preisrecherche.
-• Welche Preismodelle stehen zur Verfügung (Bsp. Subscription, Flat Rate, Pay-per-Use)?
+### • Welche Preismodelle stehen zur Verfügung?
+
 Simplerweise gibt es nur 3 Subscription-Pläne, "Hobby" für 5$/Monat, "Pro" für 20$/Monat und "Enterprise" für einen custom Betrag im Monat welcher nicht genau deklariert wurde.
 Die Pläne bieten folgende limitationen:
 <img width="642" alt="image" src="https://github.com/user-attachments/assets/750f2003-9e27-4a7b-9f01-8d8ac5d28984" />
@@ -85,16 +86,20 @@ Zuletzt ist es auch möglich anstelle einer Subscription ein "Commited Spending"
 <img width="642" alt="image" src="https://github.com/user-attachments/assets/373ec80e-8ebb-44cc-b188-ed9d9a3c5ba0" />
 
 
-• Wie kann bezahlt werden (Kreditkarte, Rechnung, ...)?
+### • Wie kann bezahlt werden?
+
 Wenn man die Subscription ändern möchte muss man dazu die Kreditkarte angeben, wobei andere Zahlungsmethoden nicht möglich sind. Angeblich soll jedoch für die Zusätzlichen Kosten die Zahlung auch per Rechnung begleichbar sein.
 
-• Gibt es ein Gratis-Angebot für Einsteiger (falls ja: was sind die Einschränkungen)?
+### • Gibt es ein Gratis-Angebot für Einsteiger?
+
 Ja es gibt eine "Full" und eine "Limited" Trial-Version. Der einzige unterschied zwischen den beiden ist, dass die Limited-Version keinen Code deployen kann sondern nur Datenbanken. Wenn man seinen Account verifiziert wird man von der Limited- zu der Full-Version heraufgestuft. Die Einschränkungen sind bereits in der vorherigen Fragen ersichtlich mit 0.5GB RAM, 2 vCPU, 1GB Ephemeral Storage und 0.5GB Volume Storage.
 
-• Welche Ressourcen werden abgerechnet?
+### • Welche Ressourcen werden abgerechnet?
+
 Es werden als Dynamische Kosten zusätzlich zur Subscription immer RAM, CPU, Network Egress und falls man noch zusätzlichen Volume Storage möchte auch der Storage abgerechnet.
 
-• Was kostet Sie das Hosting der Anwendung aus der Ausgangslage über drei Jahre?
+### • Was kostet Sie das Hosting der Anwendung aus der Ausgangslage über drei Jahre?
+
 500$ * 12 für 1sten jedes Monats (Enterprise minimum monatlicher Preis) 
 
 Eigentlich wäre die Hobby Subscription genug aber bei einem Downgrade (zweiter Tag jedes Monats) werden die Änderungen erst nächsten Monat angepasst, somit muss man bei der Enterprise Version bleiben. Die Enterprise Version hat auf der Webseite keinen Preis und muss durch die Besprechung des optimalen Plans mit einem Mitarbeiter der Railway Firma per E-Mail herausgefunden werden.
@@ -110,8 +115,8 @@ Es sollte kein zusätzlicher Speicher benötigt sein allerdings ist dies ebenfal
 Somit wäre der Gesamtpreis 2140$ im Jahr, was für die Ausgangslage von 3 Jahren 6420$ bedeutet.
 
 
-• Welche Schwierigkeiten treten bei dem Vergleich auf (z.B. unterschiedliche Servicemodelle
-oder Qualitätseigenschaften, versteckte Kosten, widersprüchliche Angaben)?
+### • Welche Schwierigkeiten treten bei dem Vergleich auf?
+
 Der Vergleich zwischen einer normalen Subscription und den "Committed Spend Tiers" ist schwierig da bei diesen Tiers sowie bei der Enterprise Version die genauen Kosten und was alles enthalten ist nicht beschrieben wird. Wenn man etwas grösseres in die Cloud stellen möchte muss man mit einer solchen personalisierten Lösung arbeiten. Weiter ist es mühsam, dass man beim Downgrade der Subscription die teurere bis ende Monat behält. Somit muss man schlussendlich viel zu viel für eine kleine Applikation mit kurzen Peaks bezahlen.
 
 ## Arbeitsauftrag 5
