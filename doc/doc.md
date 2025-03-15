@@ -49,7 +49,29 @@ Kosten - Für kleine Projekte ist die Verwendung absolut kostenlos.
 Die Nachteile sind:
 Einstellungsmöglichkeiten im "Backend" - Railway ist eine Managed Platform, die die Infrastruktur komplett abstrahiert und bietet keine Möglichkeit, unterliegende Instanzen oder Netzwerkeinstellungen direkt zu konfigurieren.
 
-### Auftrag 4 - Analyse Preisrecherche.
+
+
+## Arbeitsauftrag 2
+### OSSM-Analyse
+#### On-Demand
+Der On-Demand Aspekt ist auf Railway klar gewährleistet. Nach dem Anmelden oder registrieren kann man direkt loslegen indem ein Template gestartet wird oder ein Github-Repo verknüpft. Kurze Zeit später (bis zu 2 Minuten) ist die Applikation funktionsfähig.  
+Zum Beispiel lässt sich jederzeit das Wordpress Template starten:  
+![image](images/wordpress-lauch-activity.png)  
+Innerhalb Sekunden und ohne warten lässt sich ein Service starten. Es wurde zuerst von einem leeren Projekt gestartet und schliesslich sind alle Services funktionsfähig.  
+![image](images/wordpress-instances-launched.png)  
+
+#### Self-Service
+Bei Rawilway lassen sich alle On-Demand Services via Self-Service selbst managen. Man hat gewisse Einschränkungen wenn man sich auf dem Trial-Plan befindet im Gegensatz zu einem bezahlten Plan befindet. Man müsste also zuerst seinen Plan upgraden, will man einen Service vom bezahlten Plan nutzen. Allerdings lässt sich auch dies innerthalb von kurzer Zeit ohne direkte Kommunikation mit Railway machen. Man kann also beliebig Services starten, ohne sich mit dem Provider absprechen zu müssen.  
+Dies lässt sich ebenfalls aus den obigen Bildern entnehmen, da innert kurzer zeit ein neues Projekt angelegt wurde, und danach Datenbank- und Webserver hochgefahren wurden welche kurze zeit später vollständig funktionieren.
+
+#### Skalierbarkeit
+Bei Railway lässt sich sowohl horizontal als auch vertikal skalieren. Vertikale skalierbarkeit ist durch die anzahlt CPU-Kerne und die Menge an Arbeitsspeicher erreichbar, ist aber eingeschränkt, auf welchem Zahl-Plan man momentan fährt. Ist man gratis unterwegs, hat man keine Möglichkeit vertikal zu skalieren. Beim Hobby und Pro Plan sind 8GB Arbeisspeicher und 8 CPU's respektive 32GB Arebeitsspeicher und 32 CPU's pro Service verfügbar.
+Siehe [Pläne](https://railway.com/workspace/plans)  
+Die Hrizontale Skalierbarkeit ist vergliche zu grösseren Anbietern auch minimalistisch. Ist kein Dateisystem am Service angehängt und es sind keine Cronjobs definiert, lassen sich die Services manuell um eine gewünschte Anzahl replizieren und somit Skalieren. 
+TODO
+
+
+## Auftrag 4 - Analyse Preisrecherche.
 • Welche Preismodelle stehen zur Verfügung (Bsp. Subscription, Flat Rate, Pay-per-Use)?
 Simplerweise gibt es nur 3 Subscription-Pläne, "Hobby" für 5$/Monat, "Pro" für 20$/Monat und "Enterprise" für einen custom Betrag im Monat welcher nicht genau deklariert wurde.
 Die Pläne bieten folgende limitationen:
@@ -73,32 +95,27 @@ Ja es gibt eine "Full" und eine "Limited" Trial-Version. Der einzige unterschied
 Es werden als Dynamische Kosten zusätzlich zur Subscription immer RAM, CPU, Network Egress und falls man noch zusätzlichen Volume Storage möchte auch der Storage abgerechnet.
 
 • Was kostet Sie das Hosting der Anwendung aus der Ausgangslage über drei Jahre?
+500$ * 12 für 1sten jedes Monats (Enterprise minimum monatlicher Preis) 
+
+Eigentlich wäre die Hobby Subscription genug aber bei einem Downgrade (zweiter Tag jedes Monats) werden die Änderungen erst nächsten Monat angepasst, somit muss man bei der Enterprise Version bleiben. Die Enterprise Version hat auf der Webseite keinen Preis und muss durch die Besprechung des optimalen Plans mit einem Mitarbeiter der Railway Firma per E-Mail herausgefunden werden.
+
+Es sollte kein zusätzlicher Speicher benötigt sein allerdings ist dies ebenfalls nicht auf der Webseite deklariert wieviel beim Mindestangebot der Enterprise Version dabei ist.
+
+10$ * 8 * 12 für RAM
+
+20$ * 4 * 12 || 20$ * 8 * 12 für CPU Cores wobei nicht genau beschrieben steht wieviele Cores ein vCPU hat und sein kann, dass es nur ein halber Core eines phyischen CPUs ist. Bei der finalen Rechnung gehe ich davon aus, dass ein vCPU ein Core eines physischen CPUs ist.
+
+0.05$ * 1000 für Netzwerk Traffic
+
+Somit wäre der Gesamtpreis 2140$ im Jahr, was für die Ausgangslage von 3 Jahren 6420$ bedeutet.
 
 
 • Welche Schwierigkeiten treten bei dem Vergleich auf (z.B. unterschiedliche Servicemodelle
 oder Qualitätseigenschaften, versteckte Kosten, widersprüchliche Angaben)?
-Der Vergleich zwischen einer normalen Subscription und den "Committed Spend Tiers" ist etwas schwierig. Weil man genau berechnen muss wieviele Kosten anfallen könnten und wie konsistent die Belastung ist. Ansonsten sind die Subscriptions und die dynamischen Kosten sehr simpel. In der Dokumentation steht noch: "Cost of the plan you're on: [cost per seat] x [purchased seats] Cost of the resources you've consumed: [cost per unit] x [used units]"
+Der Vergleich zwischen einer normalen Subscription und den "Committed Spend Tiers" ist schwierig da bei diesen Tiers sowie bei der Enterprise Version die genauen Kosten und was alles enthalten ist nicht beschrieben wird. Wenn man etwas grösseres in die Cloud stellen möchte muss man mit einer solchen personalisierten Lösung arbeiten. Weiter ist es mühsam, dass man beim Downgrade der Subscription die teurere bis ende Monat behält. Somit muss man schlussendlich viel zu viel für eine kleine Applikation mit kurzen Peaks bezahlen.
 
+## Arbeitsauftrag 5
 
-
-## Arbeitsauftrag 2
-### OSSM-Analyse
-#### On-Demand
-Der On-Demand Aspekt ist auf Railway klar gewährleistet. Nach dem Anmelden oder registrieren kann man direkt loslegen indem ein Template gestartet wird oder ein Github-Repo verknüpft. Kurze Zeit später (bis zu 2 Minuten) ist die Applikation funktionsfähig.  
-Zum Beispiel lässt sich jederzeit das Wordpress Template starten:  
-![image](images/wordpress-lauch-activity.png)  
-Innerhalb Sekunden und ohne warten lässt sich ein Service starten. Es wurde zuerst von einem leeren Projekt gestartet und schliesslich sind alle Services funktionsfähig.  
-![image](images/wordpress-instances-launched.png)  
-
-#### Self-Service
-Bei Rawilway lassen sich alle On-Demand Services via Self-Service selbst managen. Man hat gewisse Einschränkungen wenn man sich auf dem Trial-Plan befindet im Gegensatz zu einem bezahlten Plan befindet. Man müsste also zuerst seinen Plan upgraden, will man einen Service vom bezahlten Plan nutzen. Allerdings lässt sich auch dies innerthalb von kurzer Zeit ohne direkte Kommunikation mit Railway machen. Man kann also beliebig Services starten, ohne sich mit dem Provider absprechen zu müssen.  
-Dies lässt sich ebenfalls aus den obigen Bildern entnehmen, da innert kurzer zeit ein neues Projekt angelegt wurde, und danach Datenbank- und Webserver hochgefahren wurden welche kurze zeit später vollständig funktionieren.
-
-#### Skalierbarkeit
-Bei Railway lässt sich sowohl horizontal als auch vertikal skalieren. Vertikale skalierbarkeit ist durch die anzahlt CPU-Kerne und die Menge an Arbeitsspeicher erreichbar, ist aber eingeschränkt, auf welchem Zahl-Plan man momentan fährt. Ist man gratis unterwegs, hat man keine Möglichkeit vertikal zu skalieren. Beim Hobby und Pro Plan sind 8GB Arbeisspeicher und 8 CPU's respektive 32GB Arebeitsspeicher und 32 CPU's pro Service verfügbar.
-Siehe [Pläne](https://railway.com/workspace/plans)  
-Die Hrizontale Skalierbarkeit ist vergliche zu grösseren Anbietern auch minimalistisch. Ist kein Dateisystem am Service angehängt und es sind keine Cronjobs definiert, lassen sich die Services manuell um eine gewünschte Anzahl replizieren und somit Skalieren. 
-TODO
 
 
 ## tmpdoc
