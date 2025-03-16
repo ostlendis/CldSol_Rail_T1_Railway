@@ -112,7 +112,9 @@ Es sollte kein zusätzlicher Speicher benötigt sein allerdings ist dies ebenfal
 
 0.05$ * 1000 für Netzwerk Traffic
 
-Somit wäre der Gesamtpreis 2140$ im Jahr, was für die Ausgangslage von 3 Jahren 6420$ bedeutet.
+Für den ersten Tag jedes Monats müssen zusätzlich noch (20$ * 28 (CPU) + 10$ * 120 (RAM)) / 30 * 12 (Es ist nirgendwo geschrieben wie die Berechnung eines einzigen Tags angegangen wird. Die Vermutung ist, dass es durch 30 mal die anzahl Tage gerechnet wird).
+
+Somit wäre der Gesamtpreis 3224$ im Jahr, was für die Ausgangslage von 3 Jahren 9672$ bedeutet.
 
 
 ### • Welche Schwierigkeiten treten bei dem Vergleich auf?
