@@ -18,7 +18,7 @@ Antwort: Ja, alle Teammitglieder können die Applikation starten, entfernen und 
 
 Frage: Können Sie Benutzer und Zugriffsrechte fürs Deployment verwalten?  
 Antwort: Nein. Man kann User zum Projekt einladen welche entweder read-only oder read-write access haben.
-Eine granulare einstellung ist nicht möglich
+Eine granulare einstellung ist nicht möglich.
 
 Frage: Bietet der Provider die Möglichkeit z.B. ein GitHub-/GitLab-Repository zu verbinden und dieses automatisch zu deployen?  
 Antwort: Ja, das ist mehr oder weniger der hauptaspekt von Railway
@@ -28,7 +28,6 @@ Antwort: Railway ist sehr einfach zu bedienen und schnell auf zu setzen, zuminde
 
 Frage: Welche Möglichkeiten haben Sie, die Applikation zu starten und zu stoppen?  
 Antwort: Auf der Website railway.com hat man die Möglichkeit das Deployment einer Applikation zu entfernen und wieder zurück zu laden. Dies ist sehr unschön und die Webseite bietet ansonsten keine weiteren Möglichkeiten in der Trial-Version. Wenn man allerdings das CLI für eine lokale Instanz verwendet kann man mit "railway up" für Start und "railway down" für Stop die Kontrolle etwas besser übernehmen.
-
 
 Frage: Gibt es die Möglichkeit, das Deployment zu automatisieren? Welche Schritte wären dazu
 nötig?  
@@ -61,14 +60,14 @@ Innerhalb Sekunden und ohne warten lässt sich ein Service starten. Es wurde zue
 ![image](images/wordpress-instances-launched.png)  
 
 #### Self-Service
-Bei Rawilway lassen sich alle On-Demand Services via Self-Service selbst managen. Man hat gewisse Einschränkungen wenn man sich auf dem Trial-Plan befindet im Gegensatz zu einem bezahlten Plan befindet. Man müsste also zuerst seinen Plan upgraden, will man einen Service vom bezahlten Plan nutzen. Allerdings lässt sich auch dies innerthalb von kurzer Zeit ohne direkte Kommunikation mit Railway machen. Man kann also beliebig Services starten, ohne sich mit dem Provider absprechen zu müssen.  
-Dies lässt sich ebenfalls aus den obigen Bildern entnehmen, da innert kurzer zeit ein neues Projekt angelegt wurde, und danach Datenbank- und Webserver hochgefahren wurden welche kurze zeit später vollständig funktionieren.
+Bei Railway lassen sich alle On-Demand Services via Self-Service selbst managen. Man hat gewisse Einschränkungen wenn man sich auf dem Trial-Plan befindet im Gegensatz zu einem bezahlten Plan befindet. Man müsste also zuerst seinen Plan upgraden, will man einen Service vom bezahlten Plan nutzen. Allerdings lässt sich auch dies innerhalb von kurzer Zeit ohne direkte Kommunikation mit Railway machen. Man kann also beliebig Services starten, ohne sich mit dem Provider absprechen zu müssen.  
+Dies lässt sich ebenfalls aus den obigen Bildern entnehmen, da in kurzer zeit ein neues Projekt angelegt wurde, und danach Datenbank- und Webserver hochgefahren wurden welche kurze zeit später vollständig funktionieren.
 
 #### Skalierbarkeit
-Bei Railway lässt sich sowohl horizontal als auch vertikal skalieren. Vertikale skalierbarkeit ist durch die anzahlt CPU-Kerne und die Menge an Arbeitsspeicher erreichbar, ist aber eingeschränkt, auf welchem Zahl-Plan man momentan fährt. Ist man gratis unterwegs, hat man keine Möglichkeit vertikal zu skalieren. Beim Hobby und Pro Plan sind 8GB Arbeisspeicher und 8 CPU's respektive 32GB Arebeitsspeicher und 32 CPU's pro Service verfügbar.
+Bei Railway lässt sich sowohl horizontal als auch vertikal skalieren. Vertikale Skalierbarkeit ist durch die anzahlt CPU-Kerne und die Menge an Arbeitsspeicher erreichbar, ist aber eingeschränkt, auf welchem Zahl-Plan man momentan fährt. Ist man gratis unterwegs, hat man keine Möglichkeit vertikal zu skalieren. Beim Hobby und Pro Plan sind 8GB Arbeitsspeicher und 8 CPU's respektive 32GB Arbeitsspeicher und 32 CPU's pro Service verfügbar.
 Siehe [Pläne](https://railway.com/workspace/plans)  
-Die Hrizontale Skalierbarkeit im Vergleich zu grösseren Anbietern auch minimalistisch. Ist kein Dateisystem am Service angehängt und es sind keine Cronjobs definiert, lassen sich die Services manuell um eine gewünschte Anzahl replizieren und somit Skalieren. 
-Gleichzeitg gibt es die Möglichkeit, einen Service in den Serverless-Mode zu schalten. Bei diesem Modus werden anhand von verschiedenen Kriterien die Aktivität am service gemessen und je nach Last die Anzahl Replikas hoch und hinunter gefahren.  
+Die Horizontale Skalierbarkeit im Vergleich zu grösseren Anbietern auch minimalistisch. Ist kein Dateisystem am Service angehängt und es sind keine Cronjobs definiert, lassen sich die Services manuell um eine gewünschte Anzahl replizieren und somit Skalieren. 
+Gleichzeitig gibt es die Möglichkeit, einen Service in den Serverless-Mode zu schalten. Bei diesem Modus werden anhand von verschiedenen Kriterien die Aktivität am service gemessen und je nach Last die Anzahl Replikas hoch und hinunter gefahren.  
 Siehe [Scaling](https://docs.railway.com/reference/scaling)
 
 #### Messbarkeit
