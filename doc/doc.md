@@ -67,9 +67,13 @@ Dies lässt sich ebenfalls aus den obigen Bildern entnehmen, da innert kurzer ze
 #### Skalierbarkeit
 Bei Railway lässt sich sowohl horizontal als auch vertikal skalieren. Vertikale skalierbarkeit ist durch die anzahlt CPU-Kerne und die Menge an Arbeitsspeicher erreichbar, ist aber eingeschränkt, auf welchem Zahl-Plan man momentan fährt. Ist man gratis unterwegs, hat man keine Möglichkeit vertikal zu skalieren. Beim Hobby und Pro Plan sind 8GB Arbeisspeicher und 8 CPU's respektive 32GB Arebeitsspeicher und 32 CPU's pro Service verfügbar.
 Siehe [Pläne](https://railway.com/workspace/plans)  
-Die Hrizontale Skalierbarkeit ist vergliche zu grösseren Anbietern auch minimalistisch. Ist kein Dateisystem am Service angehängt und es sind keine Cronjobs definiert, lassen sich die Services manuell um eine gewünschte Anzahl replizieren und somit Skalieren. 
-TODO
+Die Hrizontale Skalierbarkeit im Vergleich zu grösseren Anbietern auch minimalistisch. Ist kein Dateisystem am Service angehängt und es sind keine Cronjobs definiert, lassen sich die Services manuell um eine gewünschte Anzahl replizieren und somit Skalieren. 
+Gleichzeitg gibt es die Möglichkeit, einen Service in den Serverless-Mode zu schalten. Bei diesem Modus werden anhand von verschiedenen Kriterien die Aktivität am service gemessen und je nach Last die Anzahl Replikas hoch und hinunter gefahren.  
+Siehe [Scaling](https://docs.railway.com/reference/scaling)
 
+#### Messbarkeit
+Die mit dem Hosten verbundenen Kosten sind sehr transparent und einfach gestaltet. Bei Arbeitsspeicher, Prozessorkernen und Festplattenspeicher zahlt man pro Menge mal die Zeit. Ausgehender traffic bezahlt man pro Kilobyte.  
+Siehe [Pricing](https://docs.railway.com/reference/pricing/plans)
 
 ## Auftrag 4 - Analyse Preisrecherche.
 ### • Welche Preismodelle stehen zur Verfügung?
