@@ -116,7 +116,9 @@ Es sollte kein zusätzlicher Speicher benötigt sein allerdings ist dies ebenfal
 
 0.05$ * 1000 für Netzwerk Traffic
 
-Somit wäre der Gesamtpreis 2140$ im Jahr, was für die Ausgangslage von 3 Jahren 6420$ bedeutet.
+Für den ersten Tag jedes Monats müssen zusätzlich noch (20$ * 28 (CPU) + 10$ * 120 (RAM)) / 30 * 12 (Es ist nirgendwo geschrieben wie die Berechnung eines einzigen Tags angegangen wird. Die Vermutung ist, dass es durch 30 mal die anzahl Tage gerechnet wird).
+
+Somit wäre der Gesamtpreis 3224$ im Jahr, was für die Ausgangslage von 3 Jahren 9672$ bedeutet.
 
 
 ### • Welche Schwierigkeiten treten bei dem Vergleich auf?
@@ -124,8 +126,21 @@ Somit wäre der Gesamtpreis 2140$ im Jahr, was für die Ausgangslage von 3 Jahre
 Der Vergleich zwischen einer normalen Subscription und den "Committed Spend Tiers" ist schwierig da bei diesen Tiers sowie bei der Enterprise Version die genauen Kosten und was alles enthalten ist nicht beschrieben wird. Wenn man etwas grösseres in die Cloud stellen möchte muss man mit einer solchen personalisierten Lösung arbeiten. Weiter ist es mühsam, dass man beim Downgrade der Subscription die teurere bis ende Monat behält. Somit muss man schlussendlich viel zu viel für eine kleine Applikation mit kurzen Peaks bezahlen.
 
 ## Arbeitsauftrag 5
+### • Gibt es ein oder mehrere Service Level Objectives (SLOs)?
 
+### • Werden die fünf «Questions to Ask» aus dem SLA White Paper von Dimension Data beantwortet?
 
+### • Fehlen aus Ihrer Sicht im White Paper von Dimension Data bestimmte SLA-Evaluationskriterien, würden Sie also andere Fragen stellen?
+
+### • Schätzen Sie Existenz und Einhaltung von SLAs als wichtig ein a) bei der Entscheidung, mit einer Anwendung in die Cloud zu gehen und b) einen Provider auszuwählen? Wenn Sie unsicher sind in Ihrer Einschätzung (also in der Meinungsbildung), können Sie gerne miteinander diskutieren sowie Web-Quellen hinzuziehen.
+
+### • Gibt es neben den SLAs weitere Dokumente, die man als zukünftiger Cloud-Consumer sorgfältig lesen sollte (zumindest bei kommerzieller Nutzung)? Tipps: Denken Sie an Data Privacy, Informationen zum Gerichtsstand, Standorte der Data Center, etc.
+
+## Empfehlungen
+
+Mit dem einfachen und schnellen setup eignet es sich hervorragend für kleinere Projekte. Dabei spielt es keine Rolle ob es eine native cloud- oder eine lokale-App ist oder sogar nur eine Datenbank. Dadurch, dass das System selbst aus einem Git Projekt eine Instanz erstellt und laufen lässt benötigt man keine Änderungen an einer lokalen Applikation zu machen. 
+
+Mit den personalisierten Angeboten kann es sich auch für grössere Projekte lohnen, dazu muss man allerdings viel und detailiert mit dem Provider kommunizieren da nur sehr wenige Informationen online zur Verfügung stehen.
 
 ## tmpdoc
 
