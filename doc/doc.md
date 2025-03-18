@@ -6,18 +6,13 @@ date: "18.03.2025"
 
 \newpage
 
-## Inhaltsverzeichnis
-TODO
-
-## Arbeitsauftrag 1
+## 1. Arbeitsauftrag 1
 
 ### Vorstellung Railway
-Railway ist eine Cloud-Platform die einem erlaubt vereinfacht Applikationen zu bauen, deployen und zu skalieren. Services lassen sich über Docker-images starten oder aber auch über source code aus einem Github Repository. Ebenso lassen sich mit wenigen Klicks Datenbanken hochfahren und mit Services vernetzen.  
+Railway ist eine Cloud-Platform die einem erlaubt, vereinfacht Applikationen zu bauen, deployen und zu skalieren. Services lassen sich über Docker-images starten oder aber auch über source code aus einem Github Repository. Ebenso lassen sich mit wenigen Klicks Datenbanken hochfahren und mit Services vernetzen.  
 Railway bietet einen modernen, intuitiven visuellen Canvas welcher Übersicht über die Services bietet und gleichzeitig die Oberfläche bereitstellt seine Services zu konfigurieren.
 
-TODO
-
-### Fragen
+### Zu beantwortende Fragen
 
 Frage: Können alle Teammitglieder die Applikation deployen?  
 Antwort: Ja, alle Teammitglieder können die Applikation starten, entfernen und auch bearbeiten.
@@ -56,7 +51,7 @@ Einstellungsmöglichkeiten im "Backend" - Railway ist eine Managed Platform, die
 
 
 
-## Arbeitsauftrag 2
+## 2. Arbeitsauftrag 2
 ### OSSM-Analyse
 #### On-Demand
 Der On-Demand Aspekt ist auf Railway klar gewährleistet. Nach dem Anmelden oder registrieren kann man direkt loslegen indem ein Template gestartet wird oder ein Github-Repo verknüpft. Kurze Zeit später (bis zu 2 Minuten) ist die Applikation funktionsfähig.  
@@ -80,7 +75,7 @@ Siehe [Scaling](https://docs.railway.com/reference/scaling)
 Die mit dem Hosten verbundenen Kosten sind sehr transparent und einfach gestaltet. Bei Arbeitsspeicher, Prozessorkernen und Festplattenspeicher zahlt man pro Menge mal die Zeit. Ausgehender traffic bezahlt man pro Kilobyte.  
 Siehe [Pricing](https://docs.railway.com/reference/pricing/plans)
 
-## Arbeitsauftrag 3
+## 3. Arbeitsauftrag 3
 ### Zu beantwortende Fragen
 
 Frage: Wieviel RAM steht Ihrer Cloud-Instanz maximal zur Verfügung?  
@@ -129,12 +124,12 @@ Antwort: 10.250.10.254
 |                                                     | dem Service hinzuzufügen.                           |
 +-----------------------------------------------------+-----------------------------------------------------+
 
-## Auftrag 4 - Analyse Preisrecherche.
+## 4. Auftrag 4 - Analyse Preisrecherche.
 ### Zu beantwortende Fragen
 #### Welche Preismodelle stehen zur Verfügung?  
 
-Simplerweise gibt es nur 3 Subscription-Pläne, "Hobby" für 5$/Monat, "Pro" für 20$/Monat und "Enterprise" für einen custom Betrag im Monat welcher nicht genau deklariert wurde.
-Die Pläne bieten folgende limitationen:  
+Einfachheitshalber gibt es nur 3 Subscription-Pläne, "Hobby" für 5$/Monat, "Pro" für 20$/Monat und "Enterprise" für einen custom Betrag im Monat welcher nicht genau deklariert wurde.
+Die Pläne bieten folgende Limitationen:  
 ![preismodelle](./images/preismodelle.png)
 
 Zusätzlich zu den Subscription Kosten gibt es noch Kosten anhand der Nutzung:  
@@ -158,19 +153,19 @@ Es werden als Dynamische Kosten zusätzlich zur Subscription immer RAM, CPU, Net
 
 #### Was kostet Sie das Hosting der Anwendung aus der Ausgangslage über drei Jahre?  
 
-500$ * 12 für 1sten jedes Monats (Enterprise minimum monatlicher Preis) 
+500$ * 12 für ersten jedes Monats (Enterprise minimum monatlicher Preis) 
 
 Eigentlich wäre die Hobby Subscription genug aber bei einem Downgrade (zweiter Tag jedes Monats) werden die Änderungen erst nächsten Monat angepasst, somit muss man bei der Enterprise Version bleiben. Die Enterprise Version hat auf der Webseite keinen Preis und muss durch die Besprechung des optimalen Plans mit einem Mitarbeiter der Railway Firma per E-Mail herausgefunden werden.
 
-Es sollte kein zusätzlicher Speicher benötigt sein allerdings ist dies ebenfalls nicht auf der Webseite deklariert wieviel beim Mindestangebot der Enterprise Version dabei ist.
+Es sollte kein zusätzlicher Speicher benötigt sein allerdings ist dies ebenfalls nicht auf der Webseite deklariert wie viel beim Mindestangebot der Enterprise Version dabei ist.
 
 10$ * 8 * 12 für RAM
 
-20$ * 4 * 12 || 20$ * 8 * 12 für CPU Cores wobei nicht genau beschrieben steht wieviele Cores ein vCPU hat und sein kann, dass es nur ein halber Core eines phyischen CPUs ist. Bei der finalen Rechnung gehe ich davon aus, dass ein vCPU ein Core eines physischen CPUs ist.
+20$ * 4 * 12 || 20$ * 8 * 12 für CPU Cores wobei nicht genau beschrieben steht wie viele Cores ein vCPU hat und sein kann, dass es nur ein halber Core eines physischen CPUs ist. Bei der finalen Rechnung gehe ich davon aus, dass ein vCPU ein Core eines physischen CPUs ist.
 
 0.05$ * 1000 für Netzwerk Traffic
 
-Für den ersten Tag jedes Monats müssen zusätzlich noch (20$ * 28 (CPU) + 10$ * 120 (RAM)) / 30 * 12 (Es ist nirgendwo geschrieben wie die Berechnung eines einzigen Tags angegangen wird. Die Vermutung ist, dass es durch 30 mal die anzahl Tage gerechnet wird).
+Für den ersten Tag jedes Monats müssen zusätzlich noch (20$ * 28 (CPU) + 10$ * 120 (RAM)) / 30 * 12 (Es ist nirgendwo geschrieben wie die Berechnung eines einzigen Tags angegangen wird. Die Vermutung ist, dass es durch 30 mal die Anzahl Tage gerechnet wird).
 
 Somit wäre der Gesamtpreis 3224$ im Jahr, was für die Ausgangslage von 3 Jahren 9672$ bedeutet.
 
@@ -179,7 +174,7 @@ Somit wäre der Gesamtpreis 3224$ im Jahr, was für die Ausgangslage von 3 Jahre
 
 Der Vergleich zwischen einer normalen Subscription und den "Committed Spend Tiers" ist schwierig da bei diesen Tiers sowie bei der Enterprise Version die genauen Kosten und was alles enthalten ist nicht beschrieben wird. Wenn man etwas grösseres in die Cloud stellen möchte muss man mit einer solchen personalisierten Lösung arbeiten. Weiter ist es mühsam, dass man beim Downgrade der Subscription die teurere bis ende Monat behält. Somit muss man schlussendlich viel zu viel für eine kleine Applikation mit kurzen Peaks bezahlen.
 
-## Arbeitsauftrag 5
+## 5. Arbeitsauftrag 5
 ### Zu beantwortende Fragen
 #### Gibt es ein oder mehrere Service Level Objectives (SLOs)?
 
@@ -191,18 +186,8 @@ Der Vergleich zwischen einer normalen Subscription und den "Committed Spend Tier
 
 #### Gibt es neben den SLAs weitere Dokumente, die man als zukünftiger Cloud-Consumer sorgfältig lesen sollte (zumindest bei kommerzieller Nutzung)? Tipps: Denken Sie an Data Privacy, Informationen zum Gerichtsstand, Standorte der Data Center, etc.
 
-## Empfehlungen
+## 6. Empfehlungen
 
-Mit dem einfachen und schnellen setup eignet es sich hervorragend für kleinere Projekte. Dabei spielt es keine Rolle ob es eine native cloud- oder eine lokale-App ist oder sogar nur eine Datenbank. Dadurch, dass das System selbst aus einem Git Projekt eine Instanz erstellt und laufen lässt benötigt man keine Änderungen an einer lokalen Applikation zu machen. 
+Mit dem einfachen und schnellen setup eignet es sich hervorragend für kleinere Projekte. Dabei spielt es keine Rolle ob es eine native cloud- oder eine lokale-App oder sogar nur eine Datenbank ist. Dadurch, dass das System selbst aus einem Git Projekt eine Instanz erstellt und laufen lässt, benötigt man keine Änderungen an einer lokalen Applikation zu machen. 
 
-Mit den personalisierten Angeboten kann es sich auch für grössere Projekte lohnen, dazu muss man allerdings viel und detailiert mit dem Provider kommunizieren da nur sehr wenige Informationen online zur Verfügung stehen.
-
-## tmpdoc
-
-- Logged into railway with github account
-- looked at nextjs example
-- created github repo and copied files from previous java exercise into repo
-- created railway project and selected github repo as source
-- building and deploying went automatic, zero input and configuration required, WTF
-- created a domain so app is now accessible from web
-
+Mit den personalisierten Angeboten kann es sich auch für grössere Projekte lohnen, dazu muss man allerdings viel und detailliert mit dem Provider kommunizieren da nur sehr wenige Informationen online zur Verfügung stehen.
