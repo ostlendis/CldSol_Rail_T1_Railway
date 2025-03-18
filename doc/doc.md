@@ -146,7 +146,7 @@ Zuletzt ist es auch möglich anstelle einer Subscription ein "Commited Spending"
 
 #### Wie kann bezahlt werden?  
 
-Wenn man die Subscription ändern möchte muss man dazu die Kreditkarte angeben, wobei andere Zahlungsmethoden nicht möglich sind. Angeblich soll jedoch für die Zusätzlichen Kosten die Zahlung auch per Rechnung begleichbar sein.
+Wenn man die Subscription ändern möchte muss man dazu die Kreditkarte angeben, wobei andere Zahlungsmethoden nicht möglich sind. Wenn man allerdings die Enterprise Subscription bezahlen möchte ist auch per Rechnung gestattet.
 
 #### Gibt es ein Gratis-Angebot für Einsteiger?  
 
