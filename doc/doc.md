@@ -1,6 +1,6 @@
 ---
 title: "Arbeit 1: Evaluation eines Cloud-Providers"
-author: "Silvan Lendi, Leonardo Ravini"
+author: "Silvan Lendi, Leonardo Ravani"
 date: "18.03.2025"
 ---
 
@@ -141,7 +141,7 @@ Zuletzt ist es auch möglich anstelle einer Subscription ein "Commited Spending"
 
 #### Wie kann bezahlt werden?  
 
-Wenn man die Subscription ändern möchte muss man dazu die Kreditkarte angeben, wobei andere Zahlungsmethoden nicht möglich sind. Angeblich soll jedoch für die Zusätzlichen Kosten die Zahlung auch per Rechnung begleichbar sein.
+Wenn man die Subscription ändern möchte muss man dazu die Kreditkarte angeben, wobei andere Zahlungsmethoden nicht möglich sind. Wenn man allerdings die Enterprise Subscription bezahlen möchte ist auch per Rechnung gestattet.
 
 #### Gibt es ein Gratis-Angebot für Einsteiger?  
 
@@ -178,16 +178,38 @@ Der Vergleich zwischen einer normalen Subscription und den "Committed Spend Tier
 ### Zu beantwortende Fragen
 #### Gibt es ein oder mehrere Service Level Objectives (SLOs)?
 
+Weder auf railway.com noch auf docs.railway.com gab es irgendwelche Informationen zu den SLO oder SLA. Die einzige Erwähnung war im Bereich Support in den Docs, wobei es nur um die acknowledgement time eines Support-Falls geht. Nach einigen Tagen erhielten wir noch keine Antwort auf eine E-Mail bei welcher wir Kontakt aufnehmen wollten um weitere Details über die SLO/SLA zu erfahren.
+
 #### Werden die fünf «Questions to Ask» aus dem SLA White Paper von Dimension Data beantwortet?
+
+Nein, da kein SLA verfügbar ist.
 
 #### Fehlen aus Ihrer Sicht im White Paper von Dimension Data bestimmte SLA-Evaluationskriterien, würden Sie also andere Fragen stellen?
 
-#### Schätzen Sie Existenz und Einhaltung von SLAs als wichtig ein a) bei der Entscheidung, mit einer Anwendung in die Cloud zu gehen und b) einen Provider auszuwählen? Wenn Sie unsicher sind in Ihrer Einschätzung (also in der Meinungsbildung), können Sie gerne miteinander diskutieren sowie Web-Quellen hinzuziehen.
+Wir würden höchstens noch zusätzliche Fragen stellen. Informationen welche wichtig wären und ebenfalls nirgendwo auffindbar waren sind die Themen, Datenverlust durch den Anbieter, Sicherheit und Privacy und weitere details zur Performance. Bei der Performance wäre noch interessant wie latency und throughput gehandhabt wird.
 
-#### Gibt es neben den SLAs weitere Dokumente, die man als zukünftiger Cloud-Consumer sorgfältig lesen sollte (zumindest bei kommerzieller Nutzung)? Tipps: Denken Sie an Data Privacy, Informationen zum Gerichtsstand, Standorte der Data Center, etc.
+#### Schätzen Sie Existenz und Einhaltung von SLAs als wichtig ein a) bei der Entscheidung, mit einer Anwendung in die Cloud zu gehen und b) einen Provider auszuwählen?
+
+Wir empfinden die Existenz und vorallem die Einhaltung der SLA als sehr wichtig bei beiden Punkten aber nur zu bestimmten Situationen. Zuerst bei der Wahl ob man überhaupt in die cloud möchte: Wenn ein Service permanent online sein muss und dies bei einem Cloud Provider fast nie gegeben ist (oder zu teuer sein könnte), könnte es sich mehr lohnen das Problem selbst in die Hand zu nehmen. Wenn man allerdings eine Applikation hat welche durch die Cloud zugänglich sein sollte, jedoch sehr selten gebraucht wird, spielt auch kein Punkt in der SLA eine Rolle. Die SLA ist ein Vertrag und man sollte davon ausgehen können, dass dieser auf Seite Provider eingehalten wird. Bei dem zweiten Teil, kommt es ebenfalls darauf an ob die Applikation etwas lockerer mit den Anforderungen umgehen kann oder nicht. Hier gilt ebenfalls, wenn eine Applikation zum Beispiel immer zugänglich sein sollte, sollte man sich einen Provider aussuchen welcher möglichst viele nines in den SLA angibt. Bei beiden Fragen spielt die Applikation die Hauptrolle, wobei die SLA jedoch auch zum Zuge kommt.
+
+#### Gibt es neben den SLAs weitere Dokumente, die man als zukünftiger Cloud-Consumer sorgfältig lesen sollte?
+
+Die Datenschutzrichtlinien sowie die Nutzungsbedingungen und Sicherheitsrichtlinien.
 
 ## 6. Empfehlungen
 
 Mit dem einfachen und schnellen setup eignet es sich hervorragend für kleinere Projekte. Dabei spielt es keine Rolle ob es eine native cloud- oder eine lokale-App oder sogar nur eine Datenbank ist. Dadurch, dass das System selbst aus einem Git Projekt eine Instanz erstellt und laufen lässt, benötigt man keine Änderungen an einer lokalen Applikation zu machen. 
 
-Mit den personalisierten Angeboten kann es sich auch für grössere Projekte lohnen, dazu muss man allerdings viel und detailliert mit dem Provider kommunizieren da nur sehr wenige Informationen online zur Verfügung stehen.
+Mit den personalisierten Angeboten kann es sich auch für grössere Projekte lohnen, dazu muss man allerdings viel und detailiert mit dem Provider kommunizieren da nur sehr wenige Informationen online zur Verfügung stehen.
+
+Falls man jedoch hohen Wert auf Leistung, Verfügbarkeit, etc. setzt, ist die fehlende SLA ein Dorn im Auge, wobei man eher zu einem grossen Anbieter wechseln sollte.
+
+## tmpdoc
+
+- Logged into railway with github account
+- looked at nextjs example
+- created github repo and copied files from previous java exercise into repo
+- created railway project and selected github repo as source
+- building and deploying went automatic, zero input and configuration required, WTF
+- created a domain so app is now accessible from web
+
