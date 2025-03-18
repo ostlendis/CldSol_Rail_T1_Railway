@@ -1,4 +1,10 @@
-# Arbeit 1: Evaluation eines Cloud-Providers
+---
+title: "Arbeit 1: Evaluation eines Cloud-Providers"
+author: "Silvan Lendi, Leonardo Ravini"
+date: "18.03.2025"
+---
+
+\newpage
 
 ## Inhaltsverzeichnis
 TODO
@@ -73,6 +79,55 @@ Siehe [Scaling](https://docs.railway.com/reference/scaling)
 #### Messbarkeit
 Die mit dem Hosten verbundenen Kosten sind sehr transparent und einfach gestaltet. Bei Arbeitsspeicher, Prozessorkernen und Festplattenspeicher zahlt man pro Menge mal die Zeit. Ausgehender traffic bezahlt man pro Kilobyte.  
 Siehe [Pricing](https://docs.railway.com/reference/pricing/plans)
+
+## Arbeitsauftrag 3
+### Zu beantwortende Fragen
+
+Frage: Wieviel RAM steht Ihrer Cloud-Instanz maximal zur Verfügung?  
+Antwort: Maximal 21 megabyte  
+
+Frage: Von welchem Hersteller stammt die JVM?  
+Antwort: Oracle Corporation  
+
+Frage: Welche IP-Adresse hat der Server laut der Self-Information Applikation?
+Antwort: 10.250.10.254  
+
+### Vergleichstabelle
++-----------------------------------------------------+-----------------------------------------------------+
+| **Railway**                                         | **a9s**                                             |
++=====================================================+=====================================================+
+| **Registrierung und Anmeldung**                     |                                                     |
++-----------------------------------------------------+-----------------------------------------------------+
+| Login via Github auf der Website                    | Registrierung via Email. Vorteil: kein weiterer \    |
+| ![github login](./images/github-login.png) \        | Account nötig. \                                    |
+|                                                     | Nachteil: Account ist abhängig von GitHub.          |
++-----------------------------------------------------+-----------------------------------------------------+
+| **Deployment**                                      |                                                     |
++-----------------------------------------------------+-----------------------------------------------------+
+| Über GUI auf dem Canvas gewünschtes Repo \          | **Vorteile:** Railway benötigt keine CLI (ist \     |
+| auswählen und automatisch deployen.                 | aber eine Möglichkeit). Build passiert automatisch \|
+|                                                     | und funktioniert. \                                 |
+|                                                     | **Nachteile:** Keine.                               |
+|                                                     |                                                     |
++-----------------------------------------------------+-----------------------------------------------------+
+| **Operations (Start, Stop, Logs)**                  |                                                     |
++-----------------------------------------------------+-----------------------------------------------------+
+| Starten eines Services mittels Deployment. \        | **Vorteile:** Keine CLI benötigt. \                 |
+| Logs sind im Deployment oder im Log-Menü \          | Initiales Starten ist wesentlich einfacher \        |
+| sichtbar. Stoppen lässt sich ein Service über \     | mittels Canvas. Detaillierte und aggregierte Logs.  |
+| das Deployment: Deployment entfernen zum \          |                                                     |
+| Stoppen und redeployen, um den Service \            | **Nachteil:** Start-Stopp eines Services ist \      |
+| wieder zu starten.                                  | versteckt und umständlich.                          |
+|                                                     |                                                     |
+| ![logs image](./images/railway-logs.png)            |                                                     |
++-----------------------------------------------------+-----------------------------------------------------+
+| **Antworten zu den Fragen**                         |                                                     |
++-----------------------------------------------------+-----------------------------------------------------+
+| Public Domain am Service anhängen und URL \         | **Vorteil:** Point-and-click statt IP von der \     |
+| aufrufen. Informationen entnehmen.                  | CLI kopieren. \                                     |
+|                                                     | **Nachteil:** Zusätzlicher Schritt, Domain \        |
+|                                                     | dem Service hinzuzufügen.                           |
++-----------------------------------------------------+-----------------------------------------------------+
 
 ## Auftrag 4 - Analyse Preisrecherche.
 ### • Welche Preismodelle stehen zur Verfügung?
