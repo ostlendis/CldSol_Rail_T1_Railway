@@ -130,33 +130,33 @@ Antwort: 10.250.10.254
 +-----------------------------------------------------+-----------------------------------------------------+
 
 ## Auftrag 4 - Analyse Preisrecherche.
-### • Welche Preismodelle stehen zur Verfügung?
+### Zu beantwortende Fragen
+#### Welche Preismodelle stehen zur Verfügung?  
 
 Simplerweise gibt es nur 3 Subscription-Pläne, "Hobby" für 5$/Monat, "Pro" für 20$/Monat und "Enterprise" für einen custom Betrag im Monat welcher nicht genau deklariert wurde.
-Die Pläne bieten folgende limitationen:
-<img width="642" alt="image" src="https://github.com/user-attachments/assets/750f2003-9e27-4a7b-9f01-8d8ac5d28984" />
+Die Pläne bieten folgende limitationen:  
+![preismodelle](./images/preismodelle.png)
 
-Zusätzlich zu den Subscription Kosten gibt es noch Kosten anhand der Nutzung:
-<img width="642" alt="image" src="https://github.com/user-attachments/assets/a3e3f52c-014c-41cd-848c-e188340cb12e" />
-
-
-Zuletzt ist es auch möglich anstelle einer Subscription ein "Commited Spending" zu beziehen welches viel höhere Monatliche Kosten hat, jedoch keine weiteren dynamischen Kosten, solange man im Rahmen des Pakets bleibt:
-<img width="642" alt="image" src="https://github.com/user-attachments/assets/373ec80e-8ebb-44cc-b188-ed9d9a3c5ba0" />
+Zusätzlich zu den Subscription Kosten gibt es noch Kosten anhand der Nutzung:  
+![resource pricese](./images/resource-prices.png)
 
 
-### • Wie kann bezahlt werden?
+Zuletzt ist es auch möglich anstelle einer Subscription ein "Commited Spending" zu beziehen welches viel höhere Monatliche Kosten hat, jedoch keine weiteren dynamischen Kosten, solange man im Rahmen des Pakets bleibt:  
+![addon costs](./images/addon-costs.png)
+
+#### Wie kann bezahlt werden?  
 
 Wenn man die Subscription ändern möchte muss man dazu die Kreditkarte angeben, wobei andere Zahlungsmethoden nicht möglich sind. Angeblich soll jedoch für die Zusätzlichen Kosten die Zahlung auch per Rechnung begleichbar sein.
 
-### • Gibt es ein Gratis-Angebot für Einsteiger?
+#### Gibt es ein Gratis-Angebot für Einsteiger?  
 
 Ja es gibt eine "Full" und eine "Limited" Trial-Version. Der einzige unterschied zwischen den beiden ist, dass die Limited-Version keinen Code deployen kann sondern nur Datenbanken. Wenn man seinen Account verifiziert wird man von der Limited- zu der Full-Version heraufgestuft. Die Einschränkungen sind bereits in der vorherigen Fragen ersichtlich mit 0.5GB RAM, 2 vCPU, 1GB Ephemeral Storage und 0.5GB Volume Storage.
 
-### • Welche Ressourcen werden abgerechnet?
+#### Welche Ressourcen werden abgerechnet?  
 
 Es werden als Dynamische Kosten zusätzlich zur Subscription immer RAM, CPU, Network Egress und falls man noch zusätzlichen Volume Storage möchte auch der Storage abgerechnet.
 
-### • Was kostet Sie das Hosting der Anwendung aus der Ausgangslage über drei Jahre?
+#### Was kostet Sie das Hosting der Anwendung aus der Ausgangslage über drei Jahre?  
 
 500$ * 12 für 1sten jedes Monats (Enterprise minimum monatlicher Preis) 
 
@@ -175,20 +175,21 @@ Für den ersten Tag jedes Monats müssen zusätzlich noch (20$ * 28 (CPU) + 10$ 
 Somit wäre der Gesamtpreis 3224$ im Jahr, was für die Ausgangslage von 3 Jahren 9672$ bedeutet.
 
 
-### • Welche Schwierigkeiten treten bei dem Vergleich auf?
+#### Welche Schwierigkeiten treten bei dem Vergleich auf?  
 
 Der Vergleich zwischen einer normalen Subscription und den "Committed Spend Tiers" ist schwierig da bei diesen Tiers sowie bei der Enterprise Version die genauen Kosten und was alles enthalten ist nicht beschrieben wird. Wenn man etwas grösseres in die Cloud stellen möchte muss man mit einer solchen personalisierten Lösung arbeiten. Weiter ist es mühsam, dass man beim Downgrade der Subscription die teurere bis ende Monat behält. Somit muss man schlussendlich viel zu viel für eine kleine Applikation mit kurzen Peaks bezahlen.
 
 ## Arbeitsauftrag 5
-### • Gibt es ein oder mehrere Service Level Objectives (SLOs)?
+### Zu beantwortende Fragen
+#### Gibt es ein oder mehrere Service Level Objectives (SLOs)?
 
-### • Werden die fünf «Questions to Ask» aus dem SLA White Paper von Dimension Data beantwortet?
+#### Werden die fünf «Questions to Ask» aus dem SLA White Paper von Dimension Data beantwortet?
 
-### • Fehlen aus Ihrer Sicht im White Paper von Dimension Data bestimmte SLA-Evaluationskriterien, würden Sie also andere Fragen stellen?
+#### Fehlen aus Ihrer Sicht im White Paper von Dimension Data bestimmte SLA-Evaluationskriterien, würden Sie also andere Fragen stellen?
 
-### • Schätzen Sie Existenz und Einhaltung von SLAs als wichtig ein a) bei der Entscheidung, mit einer Anwendung in die Cloud zu gehen und b) einen Provider auszuwählen? Wenn Sie unsicher sind in Ihrer Einschätzung (also in der Meinungsbildung), können Sie gerne miteinander diskutieren sowie Web-Quellen hinzuziehen.
+#### Schätzen Sie Existenz und Einhaltung von SLAs als wichtig ein a) bei der Entscheidung, mit einer Anwendung in die Cloud zu gehen und b) einen Provider auszuwählen? Wenn Sie unsicher sind in Ihrer Einschätzung (also in der Meinungsbildung), können Sie gerne miteinander diskutieren sowie Web-Quellen hinzuziehen.
 
-### • Gibt es neben den SLAs weitere Dokumente, die man als zukünftiger Cloud-Consumer sorgfältig lesen sollte (zumindest bei kommerzieller Nutzung)? Tipps: Denken Sie an Data Privacy, Informationen zum Gerichtsstand, Standorte der Data Center, etc.
+#### Gibt es neben den SLAs weitere Dokumente, die man als zukünftiger Cloud-Consumer sorgfältig lesen sollte (zumindest bei kommerzieller Nutzung)? Tipps: Denken Sie an Data Privacy, Informationen zum Gerichtsstand, Standorte der Data Center, etc.
 
 ## Empfehlungen
 
