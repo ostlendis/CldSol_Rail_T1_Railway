@@ -207,6 +207,8 @@ Mit dem einfachen und schnellen setup eignet es sich hervorragend für kleinere 
 
 Mit den personalisierten Angeboten kann es sich auch für grössere Projekte lohnen, dazu muss man allerdings viel und detailiert mit dem Provider kommunizieren da nur sehr wenige Informationen online zur Verfügung stehen.
 
+Falls man jedoch hohen Wert auf Leistung, Verfügbarkeit, etc. setzt, ist die fehlende SLA ein Dorn im Auge, wobei man eher zu einem grossen Anbieter wechseln sollte.
+
 ## tmpdoc
 
 - Logged into railway with github account
